@@ -1,0 +1,227 @@
+@-webkit-keyframes slideInFromTop {
+  0% {
+    -webkit-transform: translateY(-200px);
+    transform: translateY(-200px); }
+  100% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0); } }
+
+@keyframes slideInFromTop {
+  0% {
+    -webkit-transform: translateY(-200px);
+    transform: translateY(-200px); }
+  100% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0); } }
+
+body {
+  font-family: "Open Sans", Roboto, "Helvetica Neue", Arial, sans-serif;
+  background: #ffffff;
+  color: #53565a; }
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: Montserrat, "Open Sans", Roboto, "Helvetica Neue", Arial, sans-serif;
+  font-weight: 500; }
+
+.section-hero-container {
+  background-image: url("https://static.ivanti.com/sites/marketing/media/images/company/contact/contact_header-bground.jpg?ext=.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  padding: 150px 0; }
+  .section-hero-container h1 {
+    font-size: 46px;
+    line-height: 1.4em;
+    letter-spacing: 7px;
+    font-weight: 600 !important;
+    text-align: center;
+    text-transform: uppercase;
+    color: #ffffff;
+    -webkit-animation: 500ms ease-out 0s 1 slideInFromTop;
+    animation: 500ms ease-out 0s 1 slideInFromTop; }
+
+.section-content-container {
+  padding: 40px 0; }
+  .section-content-container p {
+    max-width: 940px;
+    width: 90%;
+    margin: auto;
+    margin-bottom: 40px; }
+  .section-content-container .cta-container {
+    width: 100%;
+    height: auto;
+    margin: auto;
+    background: #da291c;
+    color: #ffffff;
+    padding: 40px 0; }
+    .section-content-container .cta-container .side-by-side-btns {
+      max-width: 500px;
+      width: 95%;
+      margin: auto;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: horizontal;
+      -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+      flex-direction: row;
+      -ms-flex-pack: distribute;
+      justify-content: space-around; }
+      .section-content-container .cta-container .side-by-side-btns .cta-outline-btn {
+        max-width: 225px;
+        width: calc(90% - 4px);
+        height: 46px;
+        margin: auto;
+        text-align: center !important;
+        background: rgba(255, 255, 255, 0);
+        border: 2px solid #ffffff;
+        -webkit-transition: background 200ms ease;
+        transition: background 200ms ease; }
+        .section-content-container .cta-container .side-by-side-btns .cta-outline-btn a {
+          color: #ffffff;
+          text-decoration: none; }
+          .section-content-container .cta-container .side-by-side-btns .cta-outline-btn a p {
+            color: #ffffff;
+            font-size: 21px;
+            font-weight: 500;
+            padding: 12px 0px 15px 0px; }
+        .section-content-container .cta-container .side-by-side-btns .cta-outline-btn:hover {
+          background: white;
+          color: #da291c; }
+        .section-content-container .cta-container .side-by-side-btns .cta-outline-btn:hover p {
+          color: #da291c;
+          font-weight: 600; }
+  .section-content-container .find-office-locations {
+    max-width: 940px;
+    width: 90%;
+    margin: auto;
+    padding: 40px 0; }
+    .section-content-container .find-office-locations .region-selector-container {
+      width: 100%;
+      height: auto;
+      margin: auto auto 40px auto;
+      text-align: center; }
+      .section-content-container .find-office-locations .region-selector-container p {
+        margin-bottom: 20px; }
+      .section-content-container .find-office-locations .region-selector-container select {
+        -webkit-appearance: none;
+        -moz-appearance: none;
+        appearance: none;
+        border-radius: 0px;
+        padding-left: 15px;
+        font-size: 14px;
+        border: 1px solid #53565a;
+        background-color: #53565a;
+        background-image: url("../images/dropdown_menu_arrow-white.png");
+        background-position: calc(100% - 15px) calc(0.35em + 7px);
+        background-size: 15px 15px;
+        background-repeat: no-repeat;
+        color: #ffffff;
+        height: 40px;
+        width: 31.8%;
+        min-width: 275px; }
+        .section-content-container .find-office-locations .region-selector-container select:hover {
+          cursor: pointer; }
+    .section-content-container .find-office-locations #office-locations-container {
+      width: 100%;
+      height: auto;
+      margin: auto;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: horizontal;
+      -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+      flex-direction: row;
+      -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+      -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+      justify-content: space-between; }
+      .section-content-container .find-office-locations #office-locations-container .office-location {
+        width: 31.6%;
+        height: auto;
+        border: 1px solid #53565a;
+        margin-bottom: 30px; }
+        .section-content-container .find-office-locations #office-locations-container .office-location .office-location-img {
+          width: 100%;
+          min-height: 275px;
+          height: 31.8vw;
+          max-height: 330px;
+          background-repeat: no-repeat;
+          background-position: center;
+          background-size: cover;
+          position: relative; }
+          .section-content-container .find-office-locations #office-locations-container .office-location .office-location-img .office-location-img-txt {
+            width: calc(100% - 30px);
+            background-color: rgba(0, 0, 0, 0.5);
+            padding: 25px 15px;
+            position: absolute;
+            left: 0;
+            bottom: 0;
+            text-align: left;
+            text-transform: uppercase; }
+            .section-content-container .find-office-locations #office-locations-container .office-location .office-location-img .office-location-img-txt h5 {
+              color: #ffffff;
+              font-size: 1rem;
+              line-height: 1.1;
+              letter-spacing: 2px;
+              margin-bottom: 8px; }
+            .section-content-container .find-office-locations #office-locations-container .office-location .office-location-img .office-location-img-txt p {
+              color: #da291c;
+              margin: 0;
+              font-size: .75rem;
+              font-weight: 700;
+              letter-spacing: .5px; }
+        .section-content-container .find-office-locations #office-locations-container .office-location .office-location-info {
+          width: calc(100% - 32px);
+          height: auto;
+          margin: auto;
+          padding: 25px 15px; }
+          .section-content-container .find-office-locations #office-locations-container .office-location .office-location-info h5 {
+            color: #da291c;
+            font-size: 1rem;
+            line-height: 1.1;
+            letter-spacing: 2px;
+            margin-bottom: 15px;
+            text-transform: uppercase; }
+          .section-content-container .find-office-locations #office-locations-container .office-location .office-location-info p {
+            margin: 0;
+            margin-bottom: 7px; }
+          .section-content-container .find-office-locations #office-locations-container .office-location .office-location-info p:first-of-type {
+            margin-bottom: 15px; }
+          .section-content-container .find-office-locations #office-locations-container .office-location .office-location-info p a {
+            color: #da291c;
+            text-decoration: none; }
+          .section-content-container .find-office-locations #office-locations-container .office-location .office-location-info p span a {
+            color: #53565a; }
+
+@media screen and (max-width: 767px) {
+  .section-hero-container h1 {
+    font-size: 35px; }
+  .region-selector-container select {
+    width: 48.6% !important; }
+  .office-location {
+    width: 48.6% !important; } }
+
+@media screen and (max-width: 550px) {
+  .side-by-side-btns {
+    -webkit-box-orient: vertical !important;
+    -webkit-box-direction: normal !important;
+    -ms-flex-direction: column !important;
+    flex-direction: column !important; }
+  .cta-outline-btn:first-of-type {
+    margin-bottom: 20px !important; } }
+
+@media screen and (max-width: 500px) {
+  .region-selector-container select {
+    width: 100% !important;
+    max-width: 275px !important; }
+  .office-location {
+    width: 100% !important; } }
+
+@media screen and (max-width: 315px) {
+  .region-selector-container select {
+    max-width: 100% !important;
+    width: 100% !important;
+    min-width: 100% !important; } }
